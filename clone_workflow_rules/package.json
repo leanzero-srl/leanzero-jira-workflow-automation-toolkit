@@ -1,0 +1,21 @@
+{
+  "name": "clone-workflow-rules",
+  "version": "1.1.0",
+  "description": "Clone, update, and migrate Jira Cloud workflows (JMWE, ScriptRunner, OOTB). Handles cross-instance entity-ID remapping.",
+  "main": "main/clone_workflow_rules.js",
+  "scripts": {
+    "collect": "node main/clone_workflow_rules.js --collect",
+    "collect:all": "node main/clone_workflow_rules.js --collect --all-workflows",
+    "apply:dry": "node main/clone_workflow_rules.js --apply --dry-run",
+    "apply:validate": "node main/clone_workflow_rules.js --apply --validate-only",
+    "apply:update:dry": "node main/clone_workflow_rules.js --apply --update --dry-run",
+    "apply:update:validate": "node main/clone_workflow_rules.js --apply --update --validate-only",
+    "apply:update": "node main/clone_workflow_rules.js --apply --update",
+    "apply": "node main/clone_workflow_rules.js --apply",
+    "syntax-check": "for f in main/clone_workflow_rules.js src/*.js; do node --check \"$f\" || exit 1; done && echo ALL_OK"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "license": "Apache-2.0"
+}

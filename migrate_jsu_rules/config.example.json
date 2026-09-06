@@ -1,0 +1,25 @@
+{
+  "dc": {
+    "baseUrl": "env:DC_BASE_URL",
+    "authType": "env:DC_AUTH_TYPE",
+    "token": "env:DC_PAT",
+    "username": "env:DC_USERNAME",
+    "password": "env:DC_PASSWORD"
+  },
+  "cloud": {
+    "baseUrl": "env:CLOUD_BASE_URL",
+    "apiToken": "env:CLOUD_API_TOKEN"
+  },
+  "workflowSelection": {
+    "projectKeys": [],
+    "workflowNames": [],
+    "allWorkflows": false
+  },
+  "jmwe": {
+    "enabled": true,
+    "appKey": "com.innovalog.jmwe.jira-misc-workflow-extensions"
+  },
+  "fieldMappingFile": null,
+  "idOverridesFile": null,
+  "perRuleOverrides": {}
+}

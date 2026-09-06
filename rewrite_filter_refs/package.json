@@ -1,0 +1,16 @@
+{
+  "name": "rewrite-filter-refs",
+  "version": "2.0.0",
+  "description": "Rewrites DC filter-ID and Assets references inside the JQL of Cloud filters post-migration, with post-JCMA JQL sanitizer, owner-swap, and org-admins sharing.",
+  "main": "main/rewrite_filter_refs.js",
+  "scripts": {
+    "start": "node main/rewrite_filter_refs.js",
+    "dry-run": "node main/rewrite_filter_refs.js --dry-run",
+    "plan-only": "node main/rewrite_filter_refs.js --plan-only",
+    "test": "node --test src/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  },
+  "license": "Apache-2.0"
+}
