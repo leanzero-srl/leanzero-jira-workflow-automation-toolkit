@@ -1,0 +1,30 @@
+{
+  "name": "jira-automation-migrator",
+  "version": "1.0.0",
+  "description": "Jira Cloud Automation Migrator - Migrate automation rules between Jira instances",
+  "main": "index.js",
+  "bin": {
+    "automation-migrator": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jira",
+    "automation",
+    "migration",
+    "atlassian",
+    "cloud"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^11.1.0",
+    "winston": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

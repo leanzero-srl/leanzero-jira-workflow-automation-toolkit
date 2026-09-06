@@ -1,0 +1,20 @@
+{
+  "name": "migrate-jsu-rules-dc-to-cloud",
+  "version": "0.1.0",
+  "description": "Migrate JSU (Jira Suite Utilities) workflow rules from Jira DC into Jira Cloud by converting them to native Cloud rules or JMWE equivalents and updating same-named Cloud workflows in place.",
+  "main": "main/migrate_jsu_rules.js",
+  "scripts": {
+    "collect": "node main/migrate_jsu_rules.js --collect",
+    "collect:all": "node main/migrate_jsu_rules.js --collect --all-workflows",
+    "apply:validate": "node main/migrate_jsu_rules.js --apply --validate-only",
+    "apply:dry": "node main/migrate_jsu_rules.js --apply --dry-run",
+    "apply": "node main/migrate_jsu_rules.js --apply",
+    "syntax-check": "for f in main/migrate_jsu_rules.js src/*.js; do node --check \"$f\" || exit 1; done && echo ALL_OK"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.4.0",
+    "fast-xml-parser": "^5.7.1"
+  },
+  "license": "Apache-2.0"
+}
